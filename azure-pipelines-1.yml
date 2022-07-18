@@ -6,7 +6,9 @@ stages:
 - stage: A
   jobs:
   - job: A1
+    pool: default
   - job: A2
+  - job: A3
 
 - stage: B
   jobs:
