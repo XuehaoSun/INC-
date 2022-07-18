@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: plot-agent-pools
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
