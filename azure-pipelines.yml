@@ -6,8 +6,9 @@
 trigger:
 - main
 
-pool: TestAgent1
-  # vmImage: unbuntu-latest
+# pool: TestAgent1
+pool: 
+  vmImage: unbuntu-latest
 
 steps:
 - script: echo Hello, world!
