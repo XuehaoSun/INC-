@@ -10,6 +10,10 @@ stages:
     pool: TestAgent1
   - job: A3
     pool: TestAgent1
+  - job: A2
+    pool: TestAgent1
+  - job: A3
+    pool: TestAgent1
 
 - stage: B
   jobs:
