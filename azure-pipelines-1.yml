@@ -2,7 +2,7 @@
 trigger: 
 - main
 
-pool: Ubuntu-latest
+pool: ubuntu-latest
 
 stages:
 - stage: A
