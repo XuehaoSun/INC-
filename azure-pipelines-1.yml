@@ -9,6 +9,7 @@ stages:
   - job: A1
   - job: A2
     pool: TestAgent1
+      demands:agent2
   - job: A3
     pool: TestAgent1
 
