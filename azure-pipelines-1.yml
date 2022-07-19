@@ -8,8 +8,7 @@ stages:
   jobs:
   - job: A1
   - job: A2
-    pool: 
-      name:TestAgent1
+    pool: TestAgent1
   - job: A3
     pool: TestAgent1
 
