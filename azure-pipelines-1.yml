@@ -2,13 +2,17 @@
 trigger: 
 - main
 
+pool: Ubuntu-latest
+
 stages:
 - stage: A
   jobs:
   - job: A1
     pool: default
   - job: A2
+    pool: TestAgent1
   - job: A3
+    pool: TestAgent1
 
 - stage: B
   jobs:
