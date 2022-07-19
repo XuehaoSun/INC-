@@ -1,4 +1,3 @@
-
 trigger: 
 - main
 
@@ -8,8 +7,7 @@ stages:
   jobs:
   - job: A1
   - job: A2
-    pool: default
-    # pool: TestAgent1
+    pool: TestAgent1
   - job: A3
     pool: TestAgent1
 
