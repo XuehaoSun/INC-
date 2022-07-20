@@ -2,7 +2,7 @@ trigger:
 - main
 
 # pool: 
-  # VMImage：unbuntu
+  # VMImage：ubuntu
 
 stages:
 - stage: A
