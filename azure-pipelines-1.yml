@@ -1,27 +1,27 @@
 trigger: 
 - main
 
-# pool: 
-  # VMImage：ubuntu
+pool: 
+  VMImage：ubuntu
 
-stages:
-- stage: A
-  jobs:
-  - job: A1
-  - job: A2
-    pool: TestAgent1
-  - job: A3
-    pool: TestAgent1
-  - job: A4
-    pool: TestAgent1
-  - job: A5
-    pool: TestAgent1
-  - job: A6
-    pool: TestAgent1
-    strategy:
-       parallel: 4  
+# stages:
+# - stage: A
+#   jobs:
+#   - job: A1
+#   - job: A2
+#     pool: TestAgent1
+#   - job: A3
+#     pool: TestAgent1
+#   - job: A4
+#     pool: TestAgent1
+#   - job: A5
+#     pool: TestAgent1
+#   - job: A6
+#     pool: TestAgent1
+#     strategy:
+#        parallel: 4  
 
-- stage: B
-  jobs:
-  - job: B1
-  - job: B2
+# - stage: B
+#   jobs:
+#   - job: B1
+#   - job: B2
