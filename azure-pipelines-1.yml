@@ -3,25 +3,7 @@ trigger:
 
 pool: 
   vmImage：ubuntu-latest
-
-stages:
-# - stage: A
-#   jobs:
-#   - job: A1
-#   - job: A2
-#     pool: TestAgent1
-#   - job: A3
-#     pool: TestAgent1
-#   - job: A4
-#     pool: TestAgent1
-#   - job: A5
-#     pool: TestAgent1
-#   - job: A6
-#     pool: TestAgent1
-#     strategy:
-#        parallel: 4  
-
-- stage: B
-  jobs:
-  - job: B1
-  - job: B2
+steps:
+- task: Bash@3
+  inputs:
+    filePath: 'https://github.com/intel-innersource/frameworks.ai.lpot.lpot-validation/blob/main/scripts/run_format_scan.sh'
