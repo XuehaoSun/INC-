@@ -11,13 +11,10 @@ pool:
 steps:
 - task: Bash@3
   inputs:
-    filePath: 'https://github.com/intel-innersource/frameworks.ai.lpot.lpot-validation/blob/main/scripts/run_format_scan.sh'
+    targetType: 'inline'
+    script: 'pip install pylint==2.12.1'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'pip install intel-tensorflow'
 
-# steps:
-# - script: echo Hello, world!
-#   displayName: 'Run a one-line script'
-
-# - script: |
-#     echo Add other tasks to build, test, and deploy your project.
-#     echo See https://aka.ms/yaml
-#   displayName: 'Run a multi-line script'
