@@ -1,4 +1,3 @@
-# Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -10,10 +9,15 @@ pool:
   docker-agent
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: Bash@3
+  inputs:
+    filePath: 'https://github.com/intel-innersource/frameworks.ai.lpot.lpot-validation/blob/main/scripts/run_format_scan.sh'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+# steps:
+# - script: echo Hello, world!
+#   displayName: 'Run a one-line script'
+
+# - script: |
+#     echo Add other tasks to build, test, and deploy your project.
+#     echo See https://aka.ms/yaml
+#   displayName: 'Run a multi-line script'
