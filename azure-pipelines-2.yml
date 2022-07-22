@@ -8,8 +8,8 @@ trigger:
 
 pool: wenjiao-test
 
-stages:
-- stage:
+stages: 
+- stage: pylint
   jobs:
   - job: pylint_test
     steps:
