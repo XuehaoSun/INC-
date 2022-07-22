@@ -6,7 +6,7 @@ trigger:
 - main
 
 pool:
-  docker-agent
+  wenjiao-test
 
 steps:
 - task: Bash@3
